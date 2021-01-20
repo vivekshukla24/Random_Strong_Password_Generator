@@ -1,5 +1,7 @@
 package Radom_Strong_password_generator;
 
+// Author @ vivekshukla24 + https://www.linkedin.com/in/versesshukla/
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

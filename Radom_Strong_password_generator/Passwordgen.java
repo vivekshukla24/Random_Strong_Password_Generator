@@ -19,6 +19,9 @@ class PasswordGen {
 
     static String generatePassword(int min_length, int max_length) {
         Random random = new Random();
+        
+        // All the selectable characters in the program for the password. 
+        // This offers flexibilty for the programmer to moderate the output.
 
         String upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         String lower = "abcdefghijklmnopqrstuvwxyz";

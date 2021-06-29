@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 class PasswordGen {
     public static void main(String args[]) {
-        System.out.println("Enter the desired max length of your Password [8 - 16]");
+        System.out.println("Enter the desired length of your Password [8 - 16]");
         Scanner s= new Scanner(System.in);
         int maxlen= s.nextInt();
         String password = generatePassword(8, maxlen);
@@ -23,12 +23,12 @@ class PasswordGen {
         // All the selectable characters in the program for the password. 
         // This offers flexibilty for the programmer to moderate the output.
 
-        String upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        String lower = "abcdefghijklmnopqrstuvwxyz";
+        String upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        String lowerCase = "abcdefghijklmnopqrstuvwxyz";
         String numbers = "0123456789";
         String specialChars = "!@#$%^&*(){}?";
 
-        String allChars = upper + lower + numbers + specialChars;
+        String allChars = upperCase + lowerCase + numbers + specialChars;
 
         List<Character> letters = new ArrayList<Character>();
         for (char c : allChars.toCharArray()) letters.add(c);
@@ -44,7 +44,7 @@ class PasswordGen {
             password.append(letters.get(random.nextInt(letters.size())));
         }
 
-        // This section can ensure that the size of the password is  random.
+ //        This section can be uncommented instead of the upper one to ensure that the size of the password is random but it doesn't exceed the user's input limit. 
 
 //        for (int i = random.nextInt(max_length - min_length) + min_length; i > 0; --i) {
 //            password.append(letters.get(random.nextInt(letters.size())));

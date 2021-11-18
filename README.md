@@ -1,6 +1,6 @@
 # Random_Strong_Password_Generator
 
-This program prints a strong ramdom password of desired length which has a combination of :-
+This program prints a strong random password of desired length which has a combination of :-
 
 a) Numbers
 
